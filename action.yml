@@ -1,0 +1,18 @@
+name: "XML Generator"
+author: "Easha Fernandes"
+description: "File created while practising GitHub Actions on LinkedinLearn"
+runs:
+  using: "docker"
+  image: "DockerFile"
+branding:
+  icons: "git-branch"
+  color: "red"
+inputs:
+  email: 
+    description: Commiters Email ID
+    required: true
+    default: ${{ github.actor }}@localhost
+  name: 
+    description: Commiters Name
+    required: true
+    default: ${{ github.actor }}
